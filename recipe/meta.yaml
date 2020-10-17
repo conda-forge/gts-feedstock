@@ -13,8 +13,7 @@ source:
   - path: CMakeLists.txt
 
 build:
-  number: 0
-  skip: true  # [win and vc<14]
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
@@ -29,8 +28,7 @@ requirements:
     - pkg-config  # [not win]
   host:
     - glib
-  run:
-    - glib
+
 
 test:
   commands:
