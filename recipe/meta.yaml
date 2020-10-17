@@ -14,7 +14,6 @@ source:
 
 build:
   number: 1
-  skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
@@ -29,8 +28,7 @@ requirements:
     - pkg-config  # [not win]
   host:
     - glib
-  run:
-    - glib
+
 
 test:
   commands:
