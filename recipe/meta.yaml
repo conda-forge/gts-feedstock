@@ -10,6 +10,7 @@ source:
     sha256: 059c3e13e3e3b796d775ec9f96abdce8f2b3b5144df8514eda0cc12e13e8b81e
     patches:
       - config.in.win32.patch
+      - 0001-Disable-USE_PREDICATES_INIT.patch  # [build_platform != target_platform]
   - path: CMakeLists.txt
 
 build:
