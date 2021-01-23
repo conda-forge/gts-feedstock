@@ -3,6 +3,6 @@ channel_sources:
 channel_targets:
 - conda-forge main
 glib:
-- 2.64.6
+- '2.66'
 target_platform:
 - win-64
