@@ -15,16 +15,15 @@ source:
   - path: CMakeLists.txt
 
 build:
-  number: 3
+  number: 4
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
 requirements:
   build:
     - gnuconfig  # [unix]
-    - {{ compiler('cxx') }}  # [not win]
-    - {{ compiler('c') }}    # [not win]
-    - vs2017_win-64          # [win]
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - cmake       # [win]
     - ninja       # [win]
     - make        # [not win]
