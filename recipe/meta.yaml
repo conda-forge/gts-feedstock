@@ -11,10 +11,11 @@ source:
     patches:
       - config.in.win32.patch
       - 0001-Disable-USE_PREDICATES_INIT.patch  # [build_platform != target_platform]
+      - 0002-Fix-underlinking-issue-with-lm.patch
   - path: CMakeLists.txt
 
 build:
-  number: 2
+  number: 3
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
