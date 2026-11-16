@@ -28,7 +28,7 @@ requirements:
     - cmake       # [win]
     - ninja       # [win]
     - make        # [not win]
-    - pkg-config  # [not win]
+    - pkgconf  # [not win]
   host:
     - glib
 
