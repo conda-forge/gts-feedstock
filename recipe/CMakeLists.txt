@@ -1,5 +1,5 @@
 # originally copied from https://github.com/finetjul/gts
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.5)
 project(gts)
 
 add_executable(predicates_init src/predicates_init.c)

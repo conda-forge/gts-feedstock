@@ -24,6 +24,7 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - cmake       # [win]
     - ninja       # [win]
     - make        # [not win]
