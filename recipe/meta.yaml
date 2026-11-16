@@ -15,7 +15,7 @@ source:
   - path: CMakeLists.txt
 
 build:
-  number: 4
+  number: 5
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
@@ -24,10 +24,11 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - cmake       # [win]
     - ninja       # [win]
     - make        # [not win]
-    - pkg-config  # [not win]
+    - pkgconf  # [not win]
   host:
     - glib
 
